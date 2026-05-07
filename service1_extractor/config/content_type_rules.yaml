@@ -1,0 +1,29 @@
+# content_type_rules.yaml
+# Controls how files are classified by content type and person.
+# Edit these patterns to match your report naming conventions.
+
+content_type_rules:
+  - pattern: "lab|blood|cbc|lft|kft|lipid|hba1c|thyroid|urine|culture|serum|plasma|haemogram|hemogram|biochem"
+    type: lab-report
+  - pattern: "echo|echocardiogram|echocardiography"
+    type: imaging-report-echo
+  - pattern: "cac|calcium|coronary artery"
+    type: imaging-report-cac
+  - pattern: "usg|ultrasound|sonograph"
+    type: imaging-report-usg
+  - pattern: "xray|x-ray|chest|radiograph|ct |mri"
+    type: imaging-report-radiology
+  - pattern: "smart.?report|ai.?report|health.?report|summary.?report"
+    type: smart-report
+  - pattern: "trend|tracker|history|monitoring"
+    type: trend-data
+  - pattern: "prescription|rx|medicine|medication|discharge"
+    type: clinical-note
+  - pattern: "invoice|bill|receipt"
+    type: billing
+
+person_rules:
+  - pattern: "\\bperson_1\\b"
+    person: person_1
+  - pattern: "\\bperson_2\\b"
+    person: person_2

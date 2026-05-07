@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+raw_input/
+raw_extracted/
+wiki/
+staging/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,416 @@
+# biomarkers.yaml
+# Controls which parameters the synthesizer tracks and how it
+# normalises raw lab report text to canonical biomarker filenames.
+#
+# To add a new biomarker: add an entry under `track` and list
+# any name variants you expect to see in reports under `aliases`.
+#
+# Canonical name = the wiki filename without .md
+# e.g. ldl-cholesterol → wiki/biomarkers/ldl-cholesterol.md
+
+track:
+
+  # ── Lipid panel ─────────────────────────────────────────────
+  - ldl-cholesterol
+  - hdl-cholesterol
+  - total-cholesterol
+  - triglycerides
+  - vldl
+  - non-hdl-cholesterol
+
+  # ── Metabolic ────────────────────────────────────────────────
+  - hba1c
+  - fasting-glucose
+  - post-prandial-glucose
+  - insulin
+  - homa-ir
+
+  # ── Thyroid ──────────────────────────────────────────────────
+  - tsh
+  - t3-total
+  - t4-total
+  - t3-free
+  - t4-free
+
+  # ── Liver ────────────────────────────────────────────────────
+  - alt
+  - ast
+  - alkaline-phosphatase
+  - ggt
+  - bilirubin-total
+  - bilirubin-direct
+  - total-protein
+  - albumin
+
+  # ── Kidney ───────────────────────────────────────────────────
+  - creatinine
+  - urea
+  - uric-acid
+  - egfr
+  - bun
+
+  # ── Blood count ──────────────────────────────────────────────
+  - hemoglobin
+  - hematocrit
+  - rbc
+  - wbc
+  - neutrophils
+  - lymphocytes
+  - platelets
+  - mcv
+  - mch
+
+  # ── Cardiac ──────────────────────────────────────────────────
+  - hs-crp
+  - crp
+  - homocysteine
+  - lp-a
+  - bnp
+  - nt-pro-bnp
+  - troponin
+
+  # ── Imaging derived ──────────────────────────────────────────
+  - cac-score
+  - ef-percentage
+  - lv-diastolic-dimension
+  - lv-systolic-dimension
+  - ivs-thickness
+  - pw-thickness
+
+  # ── Vitamins and minerals ────────────────────────────────────
+  - vitamin-d
+  - vitamin-b12
+  - folate
+  - ferritin
+  - serum-iron
+  - tibc
+  - calcium
+  - phosphorus
+  - magnesium
+  - sodium
+  - potassium
+  - chloride
+
+  # ── Pancreatic ───────────────────────────────────────────────
+  - amylase
+  - lipase
+
+  # ── Inflammatory / immune ────────────────────────────────────
+  - esr
+  - ana
+  - rheumatoid-factor
+
+  # ── Hormones ─────────────────────────────────────────────────
+  - cortisol
+  - dhea-s
+  - testosterone
+  - estradiol
+  - progesterone
+  - lh
+  - fsh
+
+
+aliases:
+  # ── Lipid panel ─────────────────────────────────────────────
+  ldl-cholesterol:
+    - LDL
+    - LDL-C
+    - LDL Cholesterol
+    - LDL-Cholesterol
+    - Low Density Lipoprotein
+    - Low Density Lipoprotein Cholesterol
+    - LDL Chol
+    - LDL Chol (Calc)
+    - LDL (Calculated)
+
+  hdl-cholesterol:
+    - HDL
+    - HDL-C
+    - HDL Cholesterol
+    - HDL-Cholesterol
+    - High Density Lipoprotein
+    - High Density Lipoprotein Cholesterol
+    - HDL Chol
+
+  total-cholesterol:
+    - Total Cholesterol
+    - Cholesterol
+    - Cholesterol Total
+    - Serum Cholesterol
+    - TC
+
+  triglycerides:
+    - Triglycerides
+    - Triglyceride
+    - TG
+    - TRIG
+    - Serum Triglycerides
+    - Fasting Triglycerides
+
+  vldl:
+    - VLDL
+    - VLDL Cholesterol
+    - VLDL-C
+    - Very Low Density Lipoprotein
+
+  non-hdl-cholesterol:
+    - Non-HDL Cholesterol
+    - Non HDL Cholesterol
+    - Non-HDL
+    - Non HDL
+
+  # ── Metabolic ────────────────────────────────────────────────
+  hba1c:
+    - HbA1c
+    - HBA1C
+    - Glycated Hemoglobin
+    - Glycated Haemoglobin
+    - Glycosylated Hemoglobin
+    - Glycosylated Haemoglobin
+    - A1C
+    - GHb
+    - Hemoglobin A1c
+
+  fasting-glucose:
+    - Fasting Glucose
+    - Fasting Blood Glucose
+    - FBS
+    - FBG
+    - Fasting Blood Sugar
+    - Glucose Fasting
+    - Fasting Sugar
+
+  post-prandial-glucose:
+    - Post Prandial Glucose
+    - PP Glucose
+    - PPBS
+    - Post Prandial Blood Sugar
+    - 2hr PP
+
+  insulin:
+    - Insulin
+    - Serum Insulin
+    - Fasting Insulin
+
+  # ── Thyroid ──────────────────────────────────────────────────
+  tsh:
+    - TSH
+    - Thyroid Stimulating Hormone
+    - Thyrotropin
+    - TSH (Ultrasensitive)
+    - TSH-US
+    - TSH 3rd Generation
+
+  t3-total:
+    - T3
+    - Total T3
+    - Triiodothyronine
+    - T3 Total
+
+  t4-total:
+    - T4
+    - Total T4
+    - Thyroxine
+    - T4 Total
+
+  t3-free:
+    - Free T3
+    - FT3
+    - T3 Free
+
+  t4-free:
+    - Free T4
+    - FT4
+    - T4 Free
+
+  # ── Liver ────────────────────────────────────────────────────
+  alt:
+    - ALT
+    - SGPT
+    - Alanine Aminotransferase
+    - Alanine Transaminase
+    - ALT/SGPT
+
+  ast:
+    - AST
+    - SGOT
+    - Aspartate Aminotransferase
+    - Aspartate Transaminase
+    - AST/SGOT
+
+  alkaline-phosphatase:
+    - Alkaline Phosphatase
+    - ALP
+    - Alk Phos
+    - Alk. Phosphatase
+
+  ggt:
+    - GGT
+    - Gamma GT
+    - Gamma Glutamyl Transferase
+    - Gamma-GT
+
+  bilirubin-total:
+    - Bilirubin Total
+    - Total Bilirubin
+    - Bilirubin
+    - T. Bilirubin
+
+  bilirubin-direct:
+    - Direct Bilirubin
+    - Bilirubin Direct
+    - Conjugated Bilirubin
+    - D. Bilirubin
+
+  albumin:
+    - Albumin
+    - Serum Albumin
+
+  total-protein:
+    - Total Protein
+    - Protein Total
+    - Serum Protein
+
+  # ── Kidney ───────────────────────────────────────────────────
+  creatinine:
+    - Creatinine
+    - Serum Creatinine
+    - Creat
+    - S. Creatinine
+
+  urea:
+    - Urea
+    - Blood Urea
+    - Serum Urea
+    - BUN (Urea)
+
+  uric-acid:
+    - Uric Acid
+    - Serum Uric Acid
+    - UA
+
+  egfr:
+    - eGFR
+    - EGFR
+    - Estimated GFR
+    - Estimated Glomerular Filtration Rate
+    - GFR
+
+  bun:
+    - BUN
+    - Blood Urea Nitrogen
+
+  # ── Blood count ──────────────────────────────────────────────
+  hemoglobin:
+    - Hemoglobin
+    - Haemoglobin
+    - Hb
+    - HGB
+
+  hematocrit:
+    - Hematocrit
+    - Haematocrit
+    - HCT
+    - PCV
+    - Packed Cell Volume
+
+  wbc:
+    - WBC
+    - White Blood Cells
+    - Total WBC
+    - Total Leucocyte Count
+    - TLC
+    - Leukocytes
+
+  platelets:
+    - Platelets
+    - Platelet Count
+    - PLT
+    - Thrombocytes
+
+  # ── Cardiac ──────────────────────────────────────────────────
+  hs-crp:
+    - hs-CRP
+    - hsCRP
+    - High Sensitivity CRP
+    - High Sensitivity C-Reactive Protein
+    - hs CRP
+
+  crp:
+    - CRP
+    - C-Reactive Protein
+    - C Reactive Protein
+
+  homocysteine:
+    - Homocysteine
+    - Serum Homocysteine
+    - Total Homocysteine
+
+  lp-a:
+    - Lp(a)
+    - Lipoprotein (a)
+    - Lipoprotein a
+
+  # ── Vitamins and minerals ────────────────────────────────────
+  vitamin-d:
+    - Vitamin D
+    - Vitamin D3
+    - 25-OH Vitamin D
+    - 25-Hydroxyvitamin D
+    - 25(OH)D
+    - Cholecalciferol
+
+  vitamin-b12:
+    - Vitamin B12
+    - B12
+    - Cyanocobalamin
+    - Cobalamin
+    - Serum B12
+
+  ferritin:
+    - Ferritin
+    - Serum Ferritin
+
+  serum-iron:
+    - Iron
+    - Serum Iron
+    - Fe
+
+  tibc:
+    - TIBC
+    - Total Iron Binding Capacity
+
+  calcium:
+    - Calcium
+    - Serum Calcium
+    - Ca
+
+  magnesium:
+    - Magnesium
+    - Serum Magnesium
+    - Mg
+
+  sodium:
+    - Sodium
+    - Serum Sodium
+    - Na
+
+  potassium:
+    - Potassium
+    - Serum Potassium
+    - K
+
+  # ── Pancreatic ───────────────────────────────────────────────
+  amylase:
+    - Amylase
+    - Serum Amylase
+
+  lipase:
+    - Lipase
+    - Serum Lipase
+
+  # ── Inflammatory ─────────────────────────────────────────────
+  esr:
+    - ESR
+    - Erythrocyte Sedimentation Rate
+    - Westergren ESR
